@@ -1,0 +1,572 @@
+.App {
+  background-image: url(/src/main/resources/images/background.png);
+  width: 100%;
+  min-height: 9000px;
+  color:white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div { 
+  box-sizing: border-box;
+}
+
+.header {
+  width: 90%;
+  height: 100px;
+  z-index: 100;
+  border-bottom: 1px solid #4f436e;
+  margin: 0 5%;
+}
+
+.middle {
+  display: inline-block;
+  width: 100%;
+  height: 895px;
+}
+
+
+.logo {
+  background-image: url(/src/main/resources/images/logo.png);
+  width: 200px;
+  height: 100px;
+  float: left;
+  background-size: 200px 100px;
+  margin-right: 130px;
+}
+
+.header_wallet_box {
+  float: right;
+  height: 100px;
+  margin-right: 30px;
+  padding-top: 40px;
+}
+
+.top_text_box {
+  font-weight: 600;
+  color: white;
+  float: left;
+  width: 15%;
+  max-width: 200px;
+  font-size: 25px;
+  height: 100px;
+  text-align: center;
+  padding-top: 40px;
+  cursor: pointer;
+}
+
+.top_text_box:hover{
+  color:rgb(167, 160, 172);
+}
+
+
+.connect_wallet {
+  background-color: #1f1f1f;
+  box-sizing: border-box;
+  width: 150px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+}
+
+.select_wallet {
+  background-color: #1f1f1f;
+  box-sizing: border-box;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  border-radius: 7px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  float: left;
+  margin-right: 25px;
+}
+
+.Profile_img {
+  width: 30px;
+  height: 30px;
+  float: left;
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.main_text {
+  width: 100%;
+  float: left;
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: 100px;
+  padding-left: 250px;
+}
+
+
+.subtext {
+  width: 100%;
+  float: left;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 70px;
+  padding-left: 250px;
+}
+
+.airdrop_text {
+  font-weight: 600;
+}
+
+.airdrop_box {
+  float: left;
+  padding-left: 250px;
+  margin-top: 55px;
+}
+
+.airdrop_text {
+  font-weight: 600;
+  margin-left: 35px;
+}
+
+.air_button {
+  background-color: #1a1818;
+  width: 170px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-left: 15px;
+  float: left;
+}
+
+.air_button:hover {
+  background-color:#201673;
+}
+
+.main_img {
+  background-image: url(/src/main/resources/images/main_img.png);
+  float: right;
+  width: 584px;
+  height: 556px;
+  position: absolute;
+  right: 200px;
+  top: 100px;
+  background-size: 584px 556px;
+}
+
+.main {
+  position: relative;
+}
+
+.power {
+  float: left;
+  width: 80%;
+  margin-top: 250px;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.power_text {
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #0f0f0f;
+  width: 200px;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+}
+
+.metamask {
+  background-image: url(/src/main/resources/images/metamask.png);
+  background-size: 265px 70px;
+  width: 265px;
+  height: 70px;
+  float: left;
+  margin-top: 100px;
+  margin-left: 135px;
+}
+
+.chainlink {
+  background-image: url(/src/main/resources/images/chainlink.png);
+  background-size: 318px 70px;
+  width: 318px;
+  height: 70px;
+  float: left;
+  margin-top: 100px;
+  margin-left: 235px;
+}
+
+.polygon {
+  background-image: url(/src/main/resources/images/polygon.png);
+  background-size: 226px 70px;
+  width: 226px;
+  height: 70px;
+  float: left;
+  margin-top: 100px;
+  margin-left: 235px;
+}
+
+.casinogame_text {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 250px;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.casino_box {
+  border: 3px solid red;
+  width: 60%;
+  height: 840px;
+  float: left;
+  margin-left: 20%;
+  margin-top: 100px;
+}
+
+.game_img {
+  background-image: url(/src/main/resources/images/game.png);
+  background-size : 526px 290px;
+  width:526px;
+  height: 290px;
+  display: inline-block;
+}
+
+.game_box {
+  float: left;
+  width: 50%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.game_text {
+  font-size: 40px;
+  font-weight: 600;
+  float: left;
+}
+
+.soon {
+  width: 100px;
+  height: 30px;
+  line-height: 28px;
+  background-color: #931414;
+  border-radius: 20px;
+  float: left;
+  margin-top: 19px;
+  margin-left: 13px;
+}
+
+
+.inline_block {
+  display: inline-block;
+}
+
+.center_text {
+  margin-top: 150px;
+  float: left;
+  width: 60%;
+  margin-left: 23%;
+  font-size: 32px;
+}
+
+.buyneon {
+  margin-top: 200px;
+  float: left;
+  width: 100%;
+}
+
+.buy_text {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.buy_box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #18171f , #323b3c);
+  border-radius: 10px;
+  border: 1px solid #1f2632;
+}
+
+.outter_box {
+  width: 40%;
+  float: left;
+  background: linear-gradient(45deg, #0e0d10 , #1b231f);
+  border: 1px solid #44536d;
+  height: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  margin-left: 30%;
+  padding: 10px;
+}
+
+.more_text_box {
+  float: left;
+  margin-top: 50px;
+  width: 60%;
+  margin-left: 20%;
+  height: 100px;
+  border-radius: 25px;
+  border: 1px solid #2e2d2d;
+}
+
+.more_text {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100px;
+  margin-left: 50px;
+  float: left;
+}
+
+.whitepaper {
+  font-size: 40px;
+  line-height: 100px;
+  margin-left: 330px;
+  float: left;
+  color: #6fea9c;
+}
+
+.tokenomics {
+  float: left;
+  margin-top: 150px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.enomics {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+  
+.enomics::before {
+  content: "";
+  flex-grow:1;
+  margin: 0px 16px 0 0;
+  background: rgb(255 255 255 / 62%);
+  height: 2px;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.enomics::after {
+  content: "";
+  flex-grow:1;
+  margin:0px 0px 0px 16px;
+  background: rgb(255 255 255 / 62%);
+  height: 2px;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.enomic_text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 25px
+}
+
+.token_h1 {
+  margin-top:60px;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+
+.token_box {
+  float: left;
+  background: linear-gradient(45deg, #0e0d10 , #242620);
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  border: 1px solid #403c3c;
+  margin-top: 60px;
+}
+
+.house {
+  float: left;
+  margin-top: 200px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.house_text_top {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.house_text {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top:10px;
+}
+
+.house_box {
+  width: 80%;
+  height: 500px;
+  margin-top: 80px;
+  background-color: #686aa369;
+  border-radius: 20px;
+  margin-left: 10%;
+}
+
+.house_button {
+  width: 150px;
+  font-weight: 600;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #686aa369;
+  border-radius: 50px;
+  border: 1px solid #ffffff3b;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.house_img {
+  background-image: url(/src/main/resources/images/house_img.png);
+  width: 195.5px;
+  height: 126.5px;
+  background-size: 195.5px 126.5px;
+  float: left;
+  margin-left: 30px;
+    margin-top: 200px;
+}
+
+.house_img.big {
+  width: 391px;
+  height: 253px;
+  background-size: 391px 253px;
+  margin-top: 110px;
+}
+
+.game_result {
+  float: left;
+  margin-top: 100px;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.result_text {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.result_box {
+  width: 80%;
+  height: 600px;
+  border-radius: 30px;
+  background-color: #cccccc21;
+  margin-top: 70px;
+  margin-left: 10%;
+}
+
+.NFT_gambling {
+  float: left;
+  margin-top: 150px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.nft_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.NFT_box {
+  width: 80%;
+  height: 700px;
+  border-radius: 30px;
+  background-color: #cccccc21;
+  margin-top: 70px;
+  margin-left: 10%;
+  padding-top: 50px;
+}
+
+.NFT_img {
+  background-image: url(/src/main/resources/images/nft_img.png);
+  width: 491px;
+  height: 541px;
+  background-size: 491px 541px;
+  margin-left: 297px;
+  margin-bottom: 30px;
+}
+
+.NFT__img_text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.roadmap_top {
+  background-image: url(/src/main/resources/images/roadmap_top.png);
+  background-size: 1920px 1000px;
+  float: left;
+  width: 100%;
+  height: 400px;
+  margin-top:150px
+}
+
+.roadmap_text {
+  color: black;
+  text-align: center;
+  margin-top: 200px;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.roadmap_text span {
+  background: linear-gradient(to right top, #9968e9, #5e68e8, #4697d9);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.roadmap_img {
+  background-image: url(/src/main/resources/images/roadmap_img.png);
+  background-size: 1920px 640px;
+  width: 100%;
+  height: 640px;
+  float: left;
+}
+
+.footer {
+  background-color: white;
+  float: left;
+  width: 100%;
+  height: 800px;
+}
+
+
+.footer_img {
+  background-image: url(/src/main/resources/images/footer_img.png);
+  background-size: 1536px 500px;
+  width: 1536px;
+  height: 500px;
+  float: left;
+  margin-top: 250px;
+  margin-left: 183px;
+}
