@@ -74,7 +74,30 @@ function Header() {
         <div className='buyneon' >
           <div className='buy_text' >BUY $NEON</div>
           <div className='outter_box' >
-            <div className='buy_box' ></div>
+            <div className='buy_box' >
+              <div className='neon_buy_text' >
+                Private <span className='buy_neon' >NEON</span> Token  <div className='igo' >IGO</div>
+                <div style={{ marginTop: "2px" }} >Sales</div>
+              </div>
+
+              <div className='price_box' >
+
+                <div className='neon_price' >
+                  Price
+                  <div className='neon_price_sub' >$0.0225</div>
+                </div>
+                
+             
+              
+                  <div className='neon_price' >
+                    Date
+                    <div className='neon_price_sub'>16 November 2022</div>
+                  </div>
+                  
+             
+              </div>
+              
+            </div>
           </div>
 
         </div>

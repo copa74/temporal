@@ -300,6 +300,7 @@ div {
   background: linear-gradient(45deg, #18171f , #323b3c);
   border-radius: 10px;
   border: 1px solid #1f2632;
+  padding:10px;
 }
 
 .outter_box {
@@ -569,4 +570,61 @@ div {
   float: left;
   margin-top: 250px;
   margin-left: 183px;
+}
+
+.neon_buy_text {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.buy_neon {
+  margin: 0 3px;
+  width: 75px;
+  height: 25px;
+  display: inline-block;
+  text-align: right;
+  border-radius: 50px;
+  background-color: #464551;
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.igo {
+  float: right;
+  border: 1px solid #4a4a4a;
+  border-radius: 15px;
+  width: 75px;
+  height: 32px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  margin-right: 14px;
+  box-shadow: 0 1px 5px 0 #1a1919;
+}
+
+.price_box {
+  margin-top: 60px;
+  margin-left: 30px;
+
+  
+}
+
+.neon_price {
+
+font-size: 14px;
+font-family: ui-monospace;
+float: left;
+margin-right: 70px;
+}
+
+.neon_price_sub {
+
+
+  font-size: 16px;
+  margin-top: 3px;
+  font-weight: 600;
+
 }
