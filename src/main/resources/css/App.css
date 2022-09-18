@@ -59,7 +59,7 @@ div {
 }
 
 .top_text_box:hover{
-  color:rgb(167, 160, 172);
+  color: rgb(120 180 255);
 }
 
 
@@ -104,22 +104,43 @@ div {
 }
 
 .main_text {
-  width: 100%;
+  width: 74%;
   float: left;
   font-weight: 600;
   font-size: 60px;
-  margin-top: 100px;
-  padding-left: 250px;
+  margin-top: 80px;
+  margin-left: 13%;
 }
 
+.main_text_one {
+  font-size: 130px;
+}
+
+.main_text_two {
+  font-size: 130px;
+  line-height: 110px;
+}
+
+.main_text_three {
+  font-size: 50px;
+  margin-top: 40px;
+}
 
 .subtext {
   width: 100%;
   float: left;
-  font-weight: 600;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 23px;
   margin-top: 70px;
   padding-left: 250px;
+}
+
+.subtext_neon {
+  display: inline-block;
+  font-weight: 600;
+  background: linear-gradient(to right top, #9968e9, #5e68e8, #4697d9);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .airdrop_text {
@@ -128,7 +149,7 @@ div {
 
 .airdrop_box {
   float: left;
-  padding-left: 250px;
+  padding-left: 330px;
   margin-top: 55px;
 }
 
@@ -159,12 +180,12 @@ div {
 .main_img {
   background-image: url(/src/main/resources/images/main_img.png);
   float: right;
-  width: 584px;
-  height: 556px;
+  width: 467px;
+  height: 444px;
   position: absolute;
-  right: 200px;
-  top: 100px;
-  background-size: 584px 556px;
+  right: 350px;
+  top: 350px;
+  background-size: 467px 444px;
 }
 
 .main {
@@ -275,15 +296,15 @@ div {
 }
 
 .center_text {
-  margin-top: 150px;
+  margin-top: 80px;
   float: left;
   width: 60%;
-  margin-left: 23%;
-  font-size: 32px;
+  margin-left: 20%;
+  font-size: 25px;
 }
 
 .buyneon {
-  margin-top: 200px;
+  margin-top: 180px;
   float: left;
   width: 100%;
 }
@@ -304,20 +325,20 @@ div {
 }
 
 .outter_box {
-  width: 40%;
+  width: 35%;
   float: left;
   background: linear-gradient(45deg, #0e0d10 , #1b231f);
   border: 1px solid #44536d;
   height: 300px;
   margin-top: 50px;
   border-radius: 20px;
-  margin-left: 30%;
+  margin-left: 32%;
   padding: 10px;
 }
 
 .more_text_box {
   float: left;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 60%;
   margin-left: 20%;
   height: 100px;
@@ -398,6 +419,48 @@ div {
   border-radius: 15px;
   border: 1px solid #403c3c;
   margin-top: 60px;
+  color:black;
+}
+
+.token_img {
+  background-image: url(/src/main/resources/images/neon_token.png);
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  margin-left: 10px;
+}
+
+.token_img.usdt {
+  background-image: url(/src/main/resources/images/usdt.png);
+
+}
+
+.token_img.matic {
+  background-image: url(/src/main/resources/images/matic.png);
+
+}
+
+.token_img.etc {
+  background-image: url(/src/main/resources/images/etc.png);
+
+}
+
+.token_img.binance1 {
+  background-image: url(/src/main/resources/images/binance1.png);
+
+}
+
+.token_img.binance {
+  background-image: url(/src/main/resources/images/binance.png);
+
+}
+
+.token_img.dai {
+  background-image: url(/src/main/resources/images/dai.png);
+
 }
 
 .house {
@@ -415,9 +478,9 @@ div {
 }
 
 .house_text {
-  font-size: 35px;
-  font-weight: 600;
-  margin-top:10px;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 
 .house_box {
@@ -440,6 +503,7 @@ div {
   border: 1px solid #ffffff3b;
   margin-top: 30px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .text_center {
@@ -453,7 +517,29 @@ div {
   background-size: 195.5px 126.5px;
   float: left;
   margin-left: 30px;
-    margin-top: 200px;
+  margin-top: 200px;
+  position: relative;
+}
+
+.coming_soon {
+  text-align: center;
+  margin-top: 51px;
+  color: red;
+  font-weight: 600;
+  background-color: white;
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 22px;
+
+}
+
+.background_white {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffffff8a;
 }
 
 .house_img.big {
@@ -608,8 +694,7 @@ div {
 .price_box {
   margin-top: 60px;
   margin-left: 30px;
-
-  
+  width: 80%;
 }
 
 .neon_price {
@@ -621,10 +706,22 @@ margin-right: 70px;
 }
 
 .neon_price_sub {
-
-
   font-size: 16px;
   margin-top: 3px;
   font-weight: 600;
+}
 
+.buy_button {
+  float: right;
+  margin-top: 36px;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 25px;
+  background-color: #3a3f44;
+  width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  height: 45px;
+  line-height: 43px;
+  cursor: pointer;
 }

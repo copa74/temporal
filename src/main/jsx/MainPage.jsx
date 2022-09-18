@@ -1,19 +1,20 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import  ToTo  from './ToTo.jsx';
 
-function Header() {
+function MainPage() {
 
   return (
     <div className="main">
         <div className='main_text'> 
-            <div>ALL-IN-ONE FAME-Fi</div>
-            <div> PIATFORM FOR FAMBLING</div>
+            <div className='main_text_one' >ALL-IN-ONE GAME-Fi</div>
+            <div className='main_text_two' > PIATFORM</div>
+            <div className='main_text_three' > FOR GAMBLING</div>
             {/* <div style={{marginLeft : "220px"}} > FOR FAMBLING </div> */}
         </div>
 
         <div className='subtext'>
-            <div>Reinventing the</div>
-            <div>gambling experience through</div>
-            <div>NEOND</div>
+            <div>Creating sager gambling experience though</div>
+            <div className='subtext_neon' >NEOND</div>
         </div>
         <div className='airdrop_box' >
             <div className='airdrop_text'> NFT Airdrop event</div>
@@ -76,7 +77,7 @@ function Header() {
           <div className='outter_box' >
             <div className='buy_box' >
               <div className='neon_buy_text' >
-                Private <span className='buy_neon' >NEON</span> Token  <div className='igo' >IGO</div>
+                Private <span className='buy_neon' >NEON</span> Token  
                 <div style={{ marginTop: "2px" }} >Sales</div>
               </div>
 
@@ -86,17 +87,19 @@ function Header() {
                   Price
                   <div className='neon_price_sub' >$0.0225</div>
                 </div>
-                
-             
               
                   <div className='neon_price' >
                     Date
                     <div className='neon_price_sub'>16 November 2022</div>
                   </div>
-                  
-             
+
+                  <div className='neon_price' style={{ marginTop: "20px" }}  >
+                    volume
+                    <div className='neon_price_sub' >$50K ≈ 2,500,000 DESU</div>
+                  </div>
               </div>
-              
+              <div className='buy_button' >BUY</div>
+
             </div>
           </div>
 
@@ -107,19 +110,31 @@ function Header() {
              Learn more about NEON
           </div>
           <div className='whitepaper' >
-              whitepaper
+              Whitepaper
           </div>
         </div>
 
         <div className='tokenomics'>
             <div className='enomics' >TOKENOMICS</div>
-
-            <div className='enomic_text' >Native Token</div>
-            <div className='enomic_text' >Playing Coins</div>
-            <div className='enomic_text' >Supported Assets for NEON SWAP</div>
+            <div className='enomic_text'  >
+              <span>Native Token</span> <div className='token_img neon'></div>
+            </div>
+            <div className='enomic_text' >
+              <span>Playing Coins </span> <div className='token_img usdt'></div>
+            </div>
+            <div className='enomic_text' >
+              <span> Supported Assets for NEON SWAP  </span>
+                <div className='token_img matic'></div>
+                <div className='token_img etc'></div>
+                <div className='token_img binance1'></div>
+                <div className='token_img binance'></div>
+                <div className='token_img dai'></div>
+            </div>
 
             <div className='token_h1' >Token Allocation</div>
-            <div className='token_box' ></div>
+            <div className='token_box' >
+              <ToTo />
+            </div>
         </div>
 
         <div className='house' >
@@ -127,9 +142,13 @@ function Header() {
           <div  className='house_text'>Become "the house" by holding NEOND NFT</div>
           <div  className='house_text'>NEON token will be distributed to the NFT holders</div>
           <div className='house_box' >
-            <div className='house_img' ></div>
+            <div className='house_img' >  <div className='background_white' ></div>
+              <span className='coming_soon' >COMING SOON</span>
+            </div>
             <div className='house_img big' ></div>
-            <div className='house_img' ></div>
+            <div className='house_img' > <div className='background_white' ></div> 
+             <span className='coming_soon' >COMING SOON</span>
+            </div>
           </div>
           <div className='text_center' >
             <div className='house_button' >Get Free NFT</div>
@@ -171,4 +190,4 @@ function Header() {
   )
 }
 
-export default Header
+export default MainPage
