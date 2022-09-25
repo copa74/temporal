@@ -6,22 +6,24 @@ function MainPage() {
   return (
     <div className="main">
         <div className='main_text'> 
-            <div className='main_text_one' >ALL-IN-ONE GAME-Fi</div>
-            <div className='main_text_two' > PIATFORM</div>
-            <div className='main_text_three' > FOR GAMBLING</div>
+            <div className='main_text_one' >ALL-IN-ONE GAMBLING</div>
+            <div className='main_text_two' >PLATFORM</div>
+            {/* <div className='main_text_three' > FOR GAMBLING</div> */}
             {/* <div style={{marginLeft : "220px"}} > FOR FAMBLING </div> */}
         </div>
 
+        <div className='main_img'></div>
+
         <div className='subtext'>
-            <div>Creating sager gambling experience though</div>
+            <div>Creating safer gambling experience though</div>
             <div className='subtext_neon' >NEOND</div>
         </div>
         <div className='airdrop_box' >
             <div className='airdrop_text'> NFT Airdrop event</div>
-            <div className='air_button'>join community</div>
+            <div className='air_button' style={{ marginRight: "30px" }} >join community</div>
             <div className='air_button'>Docs</div>
         </div>
-        <div className='main_img'></div>
+
 
         <div className='power'>
           <div className='power_text' >Powered by</div>
@@ -138,17 +140,20 @@ function MainPage() {
         </div>
 
         <div className='house' >
-          <div className='house_text_top' >"The house always win"</div>
+          <div className='house_text_top' >"House Always Win"</div>
           <div  className='house_text'>Become "the house" by holding NEOND NFT</div>
           <div  className='house_text'>NEON token will be distributed to the NFT holders</div>
           <div className='house_box' >
-            <div className='house_img' >  <div className='background_white' ></div>
+            <div style={{ display:"inline-block" }} >
+              <div className='house_img' >  <div className='background_white' ></div>
+                <span className='coming_soon' >COMING SOON</span>
+              </div>
+              <div className='house_img big' ></div>
+              <div className='house_img' > <div className='background_white' ></div> 
               <span className='coming_soon' >COMING SOON</span>
+              </div>
             </div>
-            <div className='house_img big' ></div>
-            <div className='house_img' > <div className='background_white' ></div> 
-             <span className='coming_soon' >COMING SOON</span>
-            </div>
+            <div  className='launch_event'>Launching Event: 10.10.2022 ~ 11.10.2022</div>
           </div>
           <div className='text_center' >
             <div className='house_button' >Get Free NFT</div>
@@ -181,7 +186,7 @@ function MainPage() {
 
         <div className='footer' >
           <div className='footer_img' ></div>
-
+          <div className='footer_bottom' ></div>
         </div>
 
      
