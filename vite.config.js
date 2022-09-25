@@ -11,4 +11,9 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    open: '/dist/index.html'
+  }
 });
+
+
