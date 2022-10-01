@@ -32,10 +32,10 @@ div {
 
 .logo {
   background-image: url(/src/main/resources/images/logo.png);
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 113.4px;
   float: left;
-  background-size: 200px 100px;
+  background-size: 180px 113.4px;
   margin-right: 130px;
 }
 
@@ -57,12 +57,42 @@ div {
   text-align: center;
   padding-top: 40px;
   cursor: pointer;
+  position: relative;
 }
 
 .top_text_box:hover{
-  color: rgb(120 180 255);
+  color: #ffffff;
+  text-shadow: 0 0 3px #fff, 0 0 10px #bfbdbd, 0 0 1px #fff, 0 0 42px #9100ff, 0 0 12px #d100ff, 0 0 92px #5600ff, 0 0 102px #ff00e0, 0 0 89px #a900ff;
 }
 
+.top_text_box:hover .drop_menu_text{
+  text-shadow: 0 0 black;;
+}
+
+.drop_menu {
+  display: none;
+  width: 100%;
+  height: 180px;
+  background-color: #1f305c;
+  position: absolute;
+  top: 100px;
+  z-index: 100000;
+  border-radius: 0 0 10px 10px;
+}
+
+.drop_menu.on {
+  display: block;
+}
+
+.drop_menu_text {
+  height: 60px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.top_text_box .drop_menu_text:hover{
+  text-shadow: 0 0 3px #fff, 0 0 10px #bfbdbd, 0 0 1px #fff, 0 0 42px #9100ff, 0 0 12px #d100ff, 0 0 92px #5600ff, 0 0 102px #ff00e0, 0 0 89px #a900ff;
+}
 
 .connect_wallet {
   background-color: #1f1f1f;
@@ -658,6 +688,7 @@ g text {
   width: 100%;
   height: 640px;
   float: left;
+  display: none;
 }
 
 .footer {
@@ -759,3 +790,87 @@ g text {
   width: 100%;
   margin-top: 50px;
 }
+
+
+.slider_box {
+  float: left;
+  height: 740px;
+  width: 100%;
+  background-color: #060606;
+  overflow: hidden;
+}
+
+.roadmap_content {
+  border: 1px solid #585353;
+    float: left;
+    width: 680px;
+    height: 450px;
+    border-radius: 21px;
+    margin-right: 50px;
+    position: relative;
+}
+
+.overflow_box {
+  width: 4000px;
+  float: left;
+  position: relative;
+  left: -100px;
+  padding-top: 100px;
+  transition: all .4s ease-in-out;
+  /* transition-property: margin-left,width; */
+}
+
+.overflow_box.one {
+  left: -100px;
+}
+
+.overflow_box.two {
+  left: -700px;
+}
+
+.overflow_box.three {
+  left: -1300px;
+}
+
+.slider_button_box {
+  float: left;
+  margin-top: 100px;
+  width: 90px;
+  height: 50px;
+  margin-left: calc( 50% - 45px );
+}
+
+.slider_button {
+  width: 10px;
+  height: 10px;
+  background-color: #585a5a;
+  border-radius: 60px;
+  margin-right: 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.slider_button.on {
+  width: 40px;
+  background-color: white;
+}
+
+.incomplete {
+  width: 130px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 65px);
+  top: -20px;
+  background-color: #c67360;
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.incomplete.on {
+  background-color: #60c666;
+}
+
