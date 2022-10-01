@@ -1,7 +1,12 @@
 // import { useState } from 'react'
 import  ToTo  from './ToTo.jsx';
+import  RoadMap  from './RoadMap.jsx';
+import  { BrowserRouter , Routes , Route , Link } from "react-router-dom";
+
 
 function MainPage() {
+
+  const imagesData  = [];
 
   return (
     <div className="main">
@@ -175,6 +180,8 @@ function MainPage() {
           </div>
         </div>
 
+
+ 
       
         <div className='roadmap' >
           <div className='roadmap_top' >
@@ -183,6 +190,8 @@ function MainPage() {
 
           <div className='roadmap_img' ></div>
         </div>
+
+        <RoadMap />
 
         <div className='footer' >
           <div className='footer_img' ></div>
