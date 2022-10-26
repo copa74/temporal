@@ -3,7 +3,7 @@ import  { BrowserRouter , Routes , Route , Link } from "react-router-dom";
 import $ from "jquery";
 // import  About from  './About.jsx'
 
-function Header() {
+function Header(props) {
   const [dropMenu, setDropMenu] = useState(false)
   const [menuBar, setmenubar] = useState(true)
 
@@ -61,7 +61,7 @@ function Header() {
           <div className='top_text_box' value={"game"} onClick={onScroll}  >Game</div>
           <div className='header_wallet_box' >
             <div className='select_wallet' ></div>
-            <div className='connect_wallet'>Connect Wallet</div>
+            <div className='connect_wallet'  onClick={props.connectWallet} >Connect Wallet</div>
           </div>
         </BrowserRouter>
       </div>
