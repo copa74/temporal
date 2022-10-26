@@ -5,6 +5,7 @@ import  MainPage from  './MainPage.jsx'
 import  Qmenu from './Qmenu.jsx'
 import { WalletRPC ,WalletData } from "./helper/Wallet"
 
+// git test
 function App() {
   const [section, setSection] = useState("main");
   const [provider, setProvider] = useState(undefined);
