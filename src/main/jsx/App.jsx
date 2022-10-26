@@ -4,6 +4,7 @@ import  Header from  './Header.jsx'
 import  MainPage from  './MainPage.jsx'
 import  Qmenu from './Qmenu.jsx'
 import { WalletRPC ,WalletData } from "./helper/Wallet"
+import { CheckSupportNetwork } from "./helper/Supported"
 
 // git test
 function App() {
@@ -64,7 +65,7 @@ function App() {
 
   return (
     <div className="App">
-        <Header  connectWallet ={connectWallet} isConnected={isConnected}  isSupported={isSupported}  />
+        <Header  connectWallet ={connectWallet} isConnected={isConnected}  isSupported={isSupported}  walletAddress={walletAddress}/>
         <MainPage/>
         <Qmenu />
     </div>
