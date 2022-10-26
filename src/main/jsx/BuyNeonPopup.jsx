@@ -3,9 +3,21 @@ import { useState } from 'react'
 
 
 function BuyNeonPopup(props) {
-    const [selectValue, setSelect] = useState("usdt");
+    const [selectValue, setSelect] = useState("USDT");
     const [selectOpen, setOpen] = useState(false);
 
+    const onOpenSelecter = () => {
+        setOpen(true);
+    }
+
+    const onCloseSelecter = () => {
+        setOpen(false);
+    }
+
+    const onChangeSelectValue = (e) =>{
+        let value = e.currentTarget.attributes.value.value;
+        setSelect(value);
+    }
 
     return  <Fragment>
       <div className="popup_layer" >
@@ -14,15 +26,19 @@ function BuyNeonPopup(props) {
             <div style={{ textAlign : "right" , color: "white" }}  onClick={props.onToggleBuyNeonPopup} >닫기</div>
             <div className="terms" > text </div>
 
-            <div>
-                <input className="but_input" ></input>
+            <div className="buy_text_box" >
+                
                 <div className="relative" >
-                    <div className="noen_selecter" >{selectValue}</div>    
-                    <div className="noen_selecter_box"  >
-                        <div>usdt</div>
-                        <div>usdc</div>
-                    </div>
+                    <div className="neon_selecter" onMouseOver={onOpenSelecter} onMouseOut={onCloseSelecter} >
+                        {selectValue} 
+                        <div className={"neon_selecter_box" + ( selectOpen ? " on" : ""  ) }  >
+                            <div className="neon_selecter_box_text" value={"USDT"} onClick={onChangeSelectValue} >USDT</div>
+                            <div className="neon_selecter_box_text" value={"USDC"}  onClick={onChangeSelectValue} >USDC</div>
+                        </div>
+                    </div>    
                 </div>
+                <input className="but_input" ></input>
+
             </div> 
         </div>
     </div>

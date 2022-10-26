@@ -3,7 +3,29 @@ import  ToTo  from './ToTo.jsx';
 import  RoadMap  from './RoadMap.jsx';
 import  BuyNeonPopup  from './BuyNeonPopup.jsx';
 import  { BrowserRouter , Routes , Route , Link } from "react-router-dom";
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className="left_arrow"
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className="right_arrow"
+      onClick={onClick}
+    />
+  );
+}
 
 function MainPage() {
   const [buyneon, setbuyneon] = useState(false)
@@ -38,6 +60,20 @@ function MainPage() {
     setbuyneon(!buyneon);
   }
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    centerPadding: "30px",
+    centerMode: true,
+    nextArrow: < SamplePrevArrow/>,
+    prevArrow: < SampleNextArrow/>
+  };
+
   return (
     <div className="main">
         <div className='main_img'></div>
@@ -65,58 +101,61 @@ function MainPage() {
           <div className='casinogame_text' >Casino Games</div>
           <div className='casinogame_text_sub' >on-chain data games providing transparency,secuirty,and fairness,</div>
           <div className='casinogame_text_sub' >NEOND is a fully scalable alternative to centralized gambling.</div>
+
+
+          
           <div className='casino_box' >
-            <div className='left_arrow' onClick={onLeftGameSelect} ></div>
-            <div className={'casino_overflow_box' + ( " on" + gameSelect) } >
-                <div className={'game_box' + ( gameSelect == 1 ? " on" : "" )} onClick={onChangeGameSelect} value={1}  >
+            {/* <div className='left_arrow' onClick={onLeftGameSelect} ></div> */}
+            <Slider {...settings}>
+                <div className={'game_box on' + ( gameSelect == 1 ? " on" : "" )} onClick={onChangeGameSelect} value={1}  >
                   <div className='game_box_img' >
-                    <div className='game_img' ></div>
+                    {/* <div className='game_img' ></div> */}
                   </div>
                   <div className='cover_box' >
-                    <div className='font-size55' >Dice1</div>
+                    <div className='font-size55' >roulette</div>
                     <div>Dice game explanations blah Dice game</div>
                     <div>explanations blah Dice game explanations</div>
                     <div>blah Dice game explanations blah</div>
                   </div>
                 </div>
 
-                <div className={'game_box'  + ( gameSelect == 2 ? " on" : "" )} onClick={onChangeGameSelect} value={2}   >
+                <div className={'game_box on'  + ( gameSelect == 2 ? " on" : "" )} onClick={onChangeGameSelect} value={2}   >
                   <div className='game_box_img' >
                     <div className='game_img' ></div>
                   </div>
                   <div className='cover_box' >
-                    <div className='font-size55' >Dice2</div>
+                    <div className='font-size55' >Dice</div>
                     <div>Dice game explanations blah Dice game</div>
                     <div>explanations blah Dice game explanations</div>
                     <div>blah Dice game explanations blah</div>
                   </div>
                 </div>
 
-                <div className={'game_box' + ( gameSelect == 3 ? " on" : "" )} onClick={onChangeGameSelect} value={3}   >
+                <div className={'game_box on' + ( gameSelect == 3 ? " on" : "" )} onClick={onChangeGameSelect} value={3}   >
                   <div className='game_box_img' >
-                    <div className='game_img' ></div>
+                    {/* <div className='game_img' ></div> */}
                   </div>
                   <div className='cover_box' >
-                    <div className='font-size55' >Dice3</div>
+                    <div className='font-size55' >Lotto</div>
                     <div>Dice game explanations blah Dice game</div>
                     <div>explanations blah Dice game explanations</div>
                     <div>blah Dice game explanations blah</div>
                   </div>
                 </div>
 
-                <div className={'game_box' + ( gameSelect == 4 ? " on" : "" )} onClick={onChangeGameSelect} value={4}   >
+                <div className={'game_box on' + ( gameSelect == 4 ? " on" : "" )} onClick={onChangeGameSelect} value={4}   >
                   <div className='game_box_img' >
-                    <div className='game_img' ></div>
+                    {/* <div className='game_img' ></div> */}
                   </div>
                   <div className='cover_box' >
-                    <div className='font-size55' >Dice4</div>
+                    <div className='font-size55' >Moon</div>
                     <div>Dice game explanations blah Dice game</div>
                     <div>explanations blah Dice game explanations</div>
                     <div>blah Dice game explanations blah</div>
                   </div>
-                </div>
-            </div>
-            <div className='right_arrow' onClick={onRightGameSelect} ></div>
+                </div> 
+            {/* </div> */}
+            </Slider>
           </div>
         </div>
 

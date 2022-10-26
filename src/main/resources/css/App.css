@@ -351,6 +351,8 @@ div {
   overflow: hidden;
 }
 
+/*slick-center*/
+
 .game_img {
   background-image: url(/src/main/resources/images/dice_img.png);
   position: absolute;
@@ -370,23 +372,23 @@ div {
 }
 
 .game_box {
-  display: inline-block;
   background-color: #8B8BF9;
   border-radius: 15px;
   margin-top: 120px;
-  height: 390px;
-  width: 280px;
-  filter: blur(4px);
-  margin-left: 77.5px;
-  font-size: 12px;
+  height: 540px;
+  font-size: 19px;
 }
 
-.game_box.on {
+.slick-slide {
+  padding: 40px;
+}
+
+/* .game_box.on {
   width: 420px;
   height: 540px;
   filter: blur(0px);
   font-size: 19px;
-}
+} */
 
 .game_box_img {
   width: 100%;
@@ -404,18 +406,18 @@ div {
   height: 44px;
   position: absolute;
   left: 0;
-  top: 670px;
+  top: 400px;
   z-index: 100000000;
   animation: box-ani 1s infinite;
 }
 
 .right_arrow {
   background-image: url(/src/main/resources/images/right_arrow.png);
-  right: -25px;
+  right: 0px;
   width: 27px;
   height: 44px;
   position: absolute;
-  top: 670px;
+  top: 400px;
   z-index: 100000000;
   animation: box-ani2 1s infinite;
 }
@@ -445,6 +447,7 @@ div {
   text-align: left;
   padding: 20px;
   height: 270px;
+  font-size: 14px;
 }
 
 .game_box.on .cover_box {
@@ -1093,7 +1096,7 @@ g text {
 }
 
 
-.noen_selecter {
+.neon_selecter {
   width: 100px;
   height: 28px;
   line-height: 28px;
@@ -1104,11 +1107,12 @@ g text {
   color: white;
   font-size: 14px;
   border: 1px solid #5f6466;
+  cursor: pointer;
 }
 
 .terms {
   width: 100%;
-  height: 300px;
+  height: 250px;
   text-align: center;
   color: white;
 }
@@ -1130,9 +1134,9 @@ g text {
   background-color: #fffdfd2e;
   color: white;
   display: inline-block;
-  margin-right: 20px;
+  margin-left: 20px;
   border-width: 0 0 1px 0;
-  border-radius: 3px 3px 0 0;
+  border-radius: 3px;
 }
 
 .relative {
@@ -1142,7 +1146,7 @@ g text {
   height: 28px;
 }
 
-.noen_selecter_box {
+.neon_selecter_box {
   position: absolute;
   width: 100px;
   height: 56px;
@@ -1153,6 +1157,17 @@ g text {
   top: 29px;
   background-color: #4b4e51;
   display: none;
+  left: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.neon_selecter_box.on {
+  display: block;
+}
+
+.neon_selecter_box_text:hover {
+  background-color: #74797d;
 }
 
 .copyright {
@@ -1210,4 +1225,12 @@ g text {
 
 .qmenu_img {
   margin-top:20px;
+}
+
+.buy_text_box {
+  width: 400px;
+  margin: 0 auto;
+  height: 200px;
+  padding: 20px;
+
 }
