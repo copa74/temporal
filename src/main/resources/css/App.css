@@ -55,10 +55,10 @@ div {
 
 .logo {
   background-image: url(/src/main/resources/images/logo.png);
-  width: 153px;
-  height: 75px;
+  width: 113px;
+  height: 73px;
   float: left;
-  background-size: 153px 75px;
+  background-size: 113px 73px;
   margin-right: 3vw;
 }
 
@@ -257,14 +257,15 @@ div {
 }
 
 .power_text {
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 600;
-  background-color: #0f0f0f;
-  width: 200px;
+  width: 400px;
   height: 50px;
   line-height: 50px;
   display: inline-block;
   margin-top: 150px;
+  margin-bottom: 60px;
+  color: #0f0f0f;
 }
 
 .power_box {
@@ -864,9 +865,9 @@ g text {
 
 .roadmap_top {
   background-image: url(/src/main/resources/images/roadmap_top.png);
-  background-size: 1920px 1000px;
+  background-size: calc(100vw - 17px) 1000px;
   float: left;
-  width: 100%;
+  width: calc(100vw - 17px);
   height: 260px;
   margin-top: 150px;
 }
@@ -902,12 +903,11 @@ g text {
 
 .footer_img {
   background-image: url(/src/main/resources/images/footer_img.png);
-  background-size: 1536px 500px;
-  width: 1536px;
-  height: 500px;
-  float: left;
+  background-size: 1344px 437px;
+  width: 1344px;
+  height: 437px;
+  margin: 0 auto;
   margin-top: 200px;
-  margin-left: 183px;
 }
 
 .neon_buy_text {
@@ -1105,7 +1105,7 @@ g text {
   margin: 0px auto;
   color: #000;
   position: relative;
-  top: 15%;
+  top: 10%;
   box-shadow: #4c4949 0px 0px 8px;
   border-radius: 7px;
   background: linear-gradient(45deg, #18171f , #323b3c);
@@ -1142,7 +1142,7 @@ g text {
   top: -7px;
 }
 
-.but_input {
+.buy_input {
   border: 1px solid #5f6466;
   width: 100px;
   height: 25px;
@@ -1153,6 +1153,7 @@ g text {
   margin-left: 20px;
   border-width: 0 0 1px 0;
   border-radius: 3px;
+  text-align: center;
 }
 
 .relative {
@@ -1187,7 +1188,7 @@ g text {
 }
 
 .copyright {
-  width: 800px;
+  width: 600px;
   display: inline-block;
   height: 50px;
   margin-left: 400px;
@@ -1247,6 +1248,18 @@ g text {
   width: 400px;
   margin: 0 auto;
   height: 200px;
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: white;
+}
 
+.neon_buy_button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #585555;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
 }

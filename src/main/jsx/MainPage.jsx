@@ -240,14 +240,13 @@ function MainPage() {
                 <span className='enomic_text_text'>Native Token</span> <div className='token_img neon'></div>
               </div>
               <div className='enomic_text' >
-                <span className='enomic_text_text'>Playing Coins </span> <div className='token_img usdt'></div>
+                <span className='enomic_text_text'>Playing Coins </span>  <div className='token_img usdt'></div> <div className='token_img neon'></div> 
               </div>
               <div className='enomic_text' >
                 <span className='enomic_text_text'> Supported Assets for NEON SWAP  </span>
-                  <div className='token_img matic'></div>
+                  <div className='token_img matic' style={{ marginLeft : "52px" }} ></div>
                   <div className='token_img etc'></div>
                   <div className='token_img binance1'></div>
-                  <div className='token_img binance'></div>
                   <div className='token_img dai'></div>
               </div>
             </div>

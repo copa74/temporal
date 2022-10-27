@@ -5,6 +5,7 @@ import { useState } from 'react'
 function BuyNeonPopup(props) {
     const [selectValue, setSelect] = useState("USDT");
     const [selectOpen, setOpen] = useState(false);
+    const [ USDTvalue, setUSDTvalue ] = useState(0);
 
     const onOpenSelecter = () => {
         setOpen(true);
@@ -17,6 +18,12 @@ function BuyNeonPopup(props) {
     const onChangeSelectValue = (e) =>{
         let value = e.currentTarget.attributes.value.value;
         setSelect(value);
+        onCloseSelecter();
+    }
+
+    const onChangeUsdt = (e) => {
+       let value = e.target.value;
+       setUSDTvalue(value);
     }
 
     return  <Fragment>
@@ -28,6 +35,7 @@ function BuyNeonPopup(props) {
 
             <div className="buy_text_box" >
                 
+                <input  value={USDTvalue}  onChange={onChangeUsdt} className="buy_input"  />
                 <div className="relative" >
                     <div className="neon_selecter" onMouseOver={onOpenSelecter} onMouseOut={onCloseSelecter} >
                         {selectValue} 
@@ -37,7 +45,10 @@ function BuyNeonPopup(props) {
                         </div>
                     </div>    
                 </div>
-                <input className="but_input" ></input>
+             
+
+                <div>{ USDTvalue * 5 } NEON</div>
+                <div className="neon_buy_button" >Buy</div>
 
             </div> 
         </div>
