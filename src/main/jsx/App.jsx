@@ -17,6 +17,7 @@ function App() {
 
   const [isConnected, setIsConnected] = useState(false);
   const [isSupported, setIsSupported] = useState(false);
+  const [networkAlarm , setNetworkAlarm ] = useState(null);
 
   const connectWallet = useCallback(async () => {
     try {
@@ -44,7 +45,19 @@ function App() {
     setChainId(WALLETDATA.chainId);
 
     setIsSupported(CheckSupportNetwork(WALLETDATA.chainId));
-  })
+    onSetNetworkAlarm(CheckSupportNetwork(WALLETDATA.chainId));
+  });
+
+  const onSetNetworkAlarm = (netWork) => {
+    if (netWork) {
+      setNetworkAlarm("on");
+    } else {
+      setNetworkAlarm("off");
+    }
+    setTimeout(() =>  setNetworkAlarm(null), 3000);
+  }
+
+
 
 
   // event
@@ -65,7 +78,7 @@ function App() {
 
   return (
     <div className="App">
-        <Header  connectWallet ={connectWallet} isConnected={isConnected}  isSupported={isSupported}  walletAddress={walletAddress}/>
+        <Header  connectWallet ={connectWallet} isConnected={isConnected}  isSupported={isSupported}  walletAddress={walletAddress}  networkAlarm = {networkAlarm}/>
         <MainPage/>
         <Qmenu />
     </div>
