@@ -40,7 +40,7 @@ function BuyNeonPopup(props) {
                 </div>
                 <div className="mainnet_box">
                     <div className="mainnet_img po" ></div><span> polygon Mainnet</span>
-                    <div className="tt"> <span className="tta"> {  (USDTvalue * 5) == 0 ? ( "") : (USDTvalue * 5) }</span>  <span className="ttc">NEON</span> </div>
+                    <div className="tt"> <span className="tta"> {  USDTvalue == "" ? ("") : (USDTvalue * 5) }</span>  <span className="ttc">NEON</span> </div>
                 </div>
 
                 <div className="buy_amount_box" >
