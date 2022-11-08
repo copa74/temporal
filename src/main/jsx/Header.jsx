@@ -19,8 +19,6 @@ function Header(props) {
     setopenNetworkSelect(false);
   }
 
-
-
   const subWalletOpen = () => {
     setopenSubMenu(true);
   }
@@ -89,15 +87,6 @@ function Header(props) {
             Game
           </div>
           <div className="header_wallet_box"  >
-            <div className="select_wallet" onMouseOver={NetworkSelectOpen}  onMouseLeave={NetworkSelectClose}>
-              {openNetworkSelect && (
-                <div className="select_wallet_network">
-                  <div className="select_wallet_network_one"><div className="select_wallet_network_img bi" ></div></div>
-                  <div className="select_wallet_network_one"><div className="select_wallet_network_img po" ></div></div>
-                  <div className="select_wallet_network_one"><div className="select_wallet_network_img et" ></div></div>
-                </div>
-              )}
-            </div>
             {isConnected ? (
               <>
                 {isSupported ? (
@@ -127,7 +116,7 @@ function Header(props) {
                    * CSS 수정 요청
                   */
                   <div className="connect_wallet">
-                    Wrong MetaMask Network
+                    Wrong Network
                 </div>
                 )}
               </>
@@ -140,17 +129,52 @@ function Header(props) {
             <Fragment>
               { props.networkAlarm == "off" && (
                 <div className="network_alarm" >
+                  <span class="material-symbols-rounded">
+                    error
+                  </span>
                   <div className="network_alarm_title">Wallet</div>
                   <div className="network_alarm_text">Wrong network, pleases connet to a compatible one</div>
                 </div>
                )}
-                      { props.networkAlarm == "on" && (
-                        <div className="network_alarm" >
-                          <div className="network_alarm_title">Wallet</div>
-                          <div className="network_alarm_text">Account connected</div>
-                        </div>
-                      )}
+              { props.networkAlarm == "on" && (
+                  <div className="network_alarm" >
+                    <span  style={{ color: "#beb1c7" }} class="material-symbols-rounded">
+                      account_balance_wallet
+                    </span>
+                    <div className="network_alarm_title">Wallet</div>
+                    <div className="network_alarm_text on">Account connected</div>
+                  </div>
+              )}
            </Fragment>
+           <div className="left_border" ></div>
+           <div className="select_wallet" onMouseOver={NetworkSelectOpen}  onMouseLeave={NetworkSelectClose}>
+              <div className="select_wallet_network_img main po" ></div>
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+              {openNetworkSelect && (
+                <div className="select_wallet_network">
+                  <div className="select_wallet_network_one">
+                    <div className="select_wallet_network_img bi" >
+                      </div>               
+                        <span class="material-symbols-rounded">
+                          expand_more
+                        </span>
+                      </div>
+                  <div className="select_wallet_network_one"><div className="select_wallet_network_img po" >
+                    </div>              
+                      <span class="material-symbols-rounded">
+                        expand_more
+                      </span>
+                    </div>
+                  <div className="select_wallet_network_one"><div className="select_wallet_network_img et" ></div>              
+                    <span class="material-symbols-rounded">
+                      expand_more
+                    </span>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </BrowserRouter>
       </div>

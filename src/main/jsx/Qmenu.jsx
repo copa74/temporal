@@ -27,14 +27,22 @@ function Qmenu() {
     return (
         <div className="qmenu" >
             {scrollChanger && (
-                 <div onClick={onScrollTop} >위</div>
+                 <div onClick={onScrollTop} >  
+                  <span  style={{ fontSize : "27px", cursor: "pointer" }} class="material-symbols-rounded">
+                    arrow_upward
+                  </span>
+                 </div>
             )}
             <div className="qmenu_img telegram"></div>
             <div className="qmenu_img discord"></div>
             <div className="qmenu_img twitter"></div>
             <div className="qmenu_img instagram"></div>
             {!scrollChanger && (
-                 <div onClick={onScrollDown} >밑</div>
+                 <div onClick={onScrollDown} >
+                  <span style={{ fontSize : "27px" , marginTop: "27px" , cursor: "pointer" }} class="material-symbols-rounded">
+                    arrow_downward
+                  </span>
+                 </div>
             )}
         </div>
     )

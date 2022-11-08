@@ -6,6 +6,7 @@ import  { BrowserRouter , Routes , Route , Link } from "react-router-dom";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import metaMask from '../resources/svg/metaMask.svg'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -322,7 +323,9 @@ function MainPage() {
           <div className='power'>
           <div className='power_text' >Powered by</div>
           <div className='power_box' >
-            <div className='metamask' ></div>
+            <div className='metamask'> </div>
+            {/* <img src={metaMask}></img> */}
+            {/* <div className='metamask' ></div> */}
             <div className='polygon' ></div>
             <div className='chainlink' ></div>
           </div> 
