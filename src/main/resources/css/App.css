@@ -405,6 +405,10 @@ div {
   background-size: 403px 402px;
   margin: 0 auto;
   margin-top: 115px;
+  position: relative;
+  transition-duration: 250ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
 }
 
 .main {

@@ -28,7 +28,7 @@ function Qmenu() {
         <div className="qmenu" >
             {scrollChanger && (
                  <div onClick={onScrollTop} >  
-                  <span  style={{ fontSize : "27px", cursor: "pointer" }} class="material-symbols-rounded">
+                  <span  style={{ fontSize : "27px", cursor: "pointer" }} className="material-symbols-rounded">
                     arrow_upward
                   </span>
                  </div>
@@ -39,7 +39,7 @@ function Qmenu() {
             <div className="qmenu_img instagram"></div>
             {!scrollChanger && (
                  <div onClick={onScrollDown} >
-                  <span style={{ fontSize : "27px" , marginTop: "27px" , cursor: "pointer" }} class="material-symbols-rounded">
+                  <span style={{ fontSize : "27px" , marginTop: "27px" , cursor: "pointer" }} className="material-symbols-rounded">
                     arrow_downward
                   </span>
                  </div>

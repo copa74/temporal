@@ -129,7 +129,7 @@ function Header(props) {
             <Fragment>
               { props.networkAlarm == "off" && (
                 <div className="network_alarm" >
-                  <span class="material-symbols-rounded">
+                  <span className="material-symbols-rounded">
                     error
                   </span>
                   <div className="network_alarm_title">Wallet</div>
@@ -138,7 +138,7 @@ function Header(props) {
                )}
               { props.networkAlarm == "on" && (
                   <div className="network_alarm" >
-                    <span  style={{ color: "#beb1c7" }} class="material-symbols-rounded">
+                    <span  style={{ color: "#beb1c7" }} className="material-symbols-rounded">
                       account_balance_wallet
                     </span>
                     <div className="network_alarm_title">Wallet</div>
@@ -149,7 +149,7 @@ function Header(props) {
            <div className="left_border" ></div>
            <div className="select_wallet" onMouseOver={NetworkSelectOpen}  onMouseLeave={NetworkSelectClose}>
               <div className="select_wallet_network_img main po" ></div>
-              <span class="material-symbols-rounded">
+              <span className="material-symbols-rounded">
                 expand_more
               </span>
               {openNetworkSelect && (
@@ -157,18 +157,18 @@ function Header(props) {
                   <div className="select_wallet_network_one">
                     <div className="select_wallet_network_img bi" >
                       </div>               
-                        <span class="material-symbols-rounded">
+                        <span className="material-symbols-rounded">
                           expand_more
                         </span>
                       </div>
                   <div className="select_wallet_network_one"><div className="select_wallet_network_img po" >
                     </div>              
-                      <span class="material-symbols-rounded">
+                      <span className="material-symbols-rounded">
                         expand_more
                       </span>
                     </div>
                   <div className="select_wallet_network_one"><div className="select_wallet_network_img et" ></div>              
-                    <span class="material-symbols-rounded">
+                    <span className="material-symbols-rounded">
                       expand_more
                     </span>
                   </div>

@@ -6,7 +6,7 @@ import  { BrowserRouter , Routes , Route , Link } from "react-router-dom";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import metaMask from '../resources/svg/metaMask.svg'
+// import metaMask from '../resources/svg/metaMask.svg'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -75,9 +75,38 @@ function MainPage() {
     prevArrow: < SampleNextArrow/>
   };
 
+  // width: 403px;
+  // height: 402px;
+
+  const onMouseMoveImg = (e) => {
+    const frame = document.getElementById("main");
+    const card = document.getElementById("main_img");
+    let { x, y, width, height } = card.getBoundingClientRect();
+
+    const left = e.clientX - x;
+    const top = e.clientY - y;
+    const centerX = left - width / 2;
+    const centerY = top - height / 2;
+    const d = Math.sqrt(centerX**2 + centerY**2);
+    card.style.transform = `
+    rotate3d(
+      ${-centerY / 100}, ${centerX / 100}, 0, ${d / 8}deg
+    )
+  `
+  }
+
+
+
+  // const frame = document.getElementById("main");
+  //let { x, y, width, height } = frame.getBoundingClientRect();
+
+
+
+
   return (
-    <div className="main">
-        <div className='main_img'></div>
+    <div className="main" id="main">
+        <div className='main_img' id="main_img" onMouseMove={onMouseMoveImg}  ></div> 
+        {/* onMouseLeave={onMouseLeaveImg}  */}
 
         <div className='main_text'> 
             <div className='main_text_one' >ALL-IN-ONE </div>
@@ -93,7 +122,7 @@ function MainPage() {
         {/* </div> */}
         <div className='airdrop_box' >
             <div className='airdrop_text'> NFT Airdrop event</div>
-            <div className='air_button on' style={{ marginRight: "30px" }} >join community</div>
+            <div className='air_button on'  style={{ marginRight: "30px" }} >join community</div>
             <div className='air_button'>Docs</div>
         </div>
 
