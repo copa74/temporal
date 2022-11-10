@@ -100,12 +100,12 @@ function MainPage() {
   // const frame = document.getElementById("main");
   //let { x, y, width, height } = frame.getBoundingClientRect();
 
-
+  // onMouseMoveImg
 
 
   return (
     <div className="main" id="main">
-        <div className='main_img' id="main_img" onMouseMove={onMouseMoveImg}  ></div> 
+        <div className='main_img' id="main_img"  ></div> 
         {/* onMouseLeave={onMouseLeaveImg}  */}
 
         <div className='main_text'> 
