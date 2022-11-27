@@ -2,6 +2,8 @@ import { useState } from 'react'
 import  ToTo  from './ToTo.jsx';
 import  RoadMap  from './RoadMap.jsx';
 import  BuyNeonPopup  from './BuyNeonPopup.jsx';
+import  TokenBox  from './TokenBox.jsx';
+
 import  { BrowserRouter , Routes , Route , Link } from "react-router-dom";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
@@ -143,9 +145,9 @@ function MainPage() {
                   </div>
                   <div className='cover_box' >
                     <div className='font-size55' >roulette</div>
-                    <div>Dice game explanations blah Dice game</div>
-                    <div>explanations blah Dice game explanations</div>
-                    <div>blah Dice game explanations blah</div>
+                    <div>Dice game explanations blah Dice game
+                    explanations blah Dice game explanations
+                    blah Dice game explanations blah</div>
                   </div>
                 </div>
 
@@ -155,9 +157,9 @@ function MainPage() {
                   </div>
                   <div className='cover_box' >
                     <div className='font-size55' >Dice</div>
-                    <div>Dice game explanations blah Dice game</div>
-                    <div>explanations blah Dice game explanations</div>
-                    <div>blah Dice game explanations blah</div>
+                    <div>Dice game explanations blah Dice game
+                    explanations blah Dice game explanations
+                    blah Dice game explanations blah</div>
                   </div>
                 </div>
 
@@ -167,9 +169,9 @@ function MainPage() {
                   </div>
                   <div className='cover_box' >
                     <div className='font-size55' >Lotto</div>
-                    <div>Dice game explanations blah Dice game</div>
-                    <div>explanations blah Dice game explanations</div>
-                    <div>blah Dice game explanations blah</div>
+                    <div>Dice game explanations blah Dice game
+                    explanations blah Dice game explanations
+                    blah Dice game explanations blah</div>
                   </div>
                 </div>
 
@@ -179,9 +181,9 @@ function MainPage() {
                   </div>
                   <div className='cover_box' >
                     <div className='font-size55' >Moon</div>
-                    <div>Dice game explanations blah Dice game</div>
-                    <div>explanations blah Dice game explanations</div>
-                    <div>blah Dice game explanations blah</div>
+                    <div>Dice game explanations blah Dice game
+                    explanations blah Dice game explanations
+                    blah Dice game explanations blah</div>
                   </div>
                 </div> 
             {/* </div> */}
@@ -244,11 +246,7 @@ function MainPage() {
 
 
 
-{/* 
-
-
-
-
+      {/* 
         <div className='center_text_box' >
           <div className='center_text' >
             Completely on-chain data games providing transparency, security, and
@@ -261,7 +259,8 @@ function MainPage() {
         <div className='tokenomics'>
             <div className='token_h1' >Token Allocation</div>
             <div className='token_box' >
-              <ToTo />
+              {/* <ToTo /> */}
+              <TokenBox />
             </div>
 
             <div className='enomics_box'>

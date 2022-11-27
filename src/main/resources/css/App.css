@@ -67,11 +67,11 @@ div {
   position: relative;
   z-index: 100000;
   width: 245px;
-  height: 50px;
+  height: 40px;
   background-color: #B5B2FF;
   border: 2px solid #190C48;
   border-radius: 50px;
-  margin-top: 12.5px;
+  margin-top: 17.5px;
 }
 
 .wallet_sub_menu {
@@ -125,15 +125,15 @@ div {
 }
 
 .select_wallet_network_img.main {
-  margin-top: 15px;
+  margin-top: 10px;
   margin-left: 8px;
 }
 .select_wallet span {
   float: left;
-    margin-left: 5px;
-    margin-top: 14px;
-    color: #190C4B;
-    font-weight: 600;
+  margin-left: 9px;
+  margin-top: 9px;
+  color: #190C4B;
+  font-weight: 600;
 }
 
 .bi {
@@ -278,7 +278,7 @@ div {
 .connect_wallet {
   box-sizing: border-box;
   width: 155px;
-  height: 50px;
+  height: 40px;
   text-align: center;
   border-radius: 7px;
   cursor: pointer;
@@ -286,14 +286,14 @@ div {
   margin-right: 10px;
   font-weight: 600;
   color: #190C4B;
-  font-size: 17px;
-  line-height: 46px;
+  font-size: 14px;
+  line-height: 36px;
   padding-left: 20px;
 }
 
 .left_border {
   float: left;
-  height: 36px;
+  height: 26px;
   margin-top: 5px;
   width: 2px;
   background-color: #190c48;
@@ -302,7 +302,7 @@ div {
 .select_wallet {
   box-sizing: border-box;
   width: 72px;
-  height: 50px;
+  height: 40px;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -328,17 +328,17 @@ div {
 }
 
 .main_text_one {
-  font-size: 65px;
+  font-size: 50px;
   text-align: center;
 }
 
 .main_text_two {
-  font-size: 65px;
+  font-size: 50px;
   text-align: center;
 }
 
 .main_text_three {
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
   font-weight: 400;
 }
@@ -367,8 +367,8 @@ div {
 
 .airdrop_box {
   margin: 0 auto;
-  margin-top: 55px;
-  width: 350px;
+  margin-top: 75px;
+  width: 430px;
 }
 
 .airdrop_text {
@@ -377,11 +377,11 @@ div {
 }
 
 .air_button {
-  width: 160px;
-  height: 70px;
+  width: 200px;
+  height: 84px;
   text-align: center;
-  line-height: 68px;
-  font-size: 16px;
+  line-height: 84px;
+  font-size: 18px;
   font-weight: 600;
   cursor: pointer;
   border: 2px solid white;
@@ -470,7 +470,7 @@ div {
 }
 
 .casino {
-  width: 1250px;
+  width: 1050px;
   margin: 0 auto;
   position: relative;
 }
@@ -501,19 +501,20 @@ div {
 .casinogame_text {
   width: 100%;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 170px;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 36px;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .casinogame_text_sub {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
 .casino_box {
-  width: 1250px;
+  width: 1050px;
   height: 760px;
   display: inline-block;
   overflow: hidden;
@@ -543,18 +544,18 @@ div {
   background-color: #8B8BF9;
   border-radius: 15px;
   margin-top: 150px;
-  height: 420px;
+  height: 360px;
   font-size: 19px;
 }
 
 .slick-center .game_box  {
-  height: 540px;
+  height: 490px;
   margin-top: 120px;
 }
 
 
 .slick-slide  {
-  padding: 60px;
+  padding: 35px;
   filter: blur(3px);
 }
 
@@ -573,12 +574,12 @@ div {
 
 .game_box_img {
   width: 100%;
-  position:relative;
-  height: 120px;
+  position: relative;
+  height: 100px;
 }
 
 .slick-center .game_box_img {
-  height: 186px;
+  height: 140px;
 }
 
 
@@ -628,8 +629,9 @@ div {
   border-radius: 0 0 14px 14px;
   text-align: left;
   padding: 20px;
-  height: 300px;
+  height: 260px;
   font-size: 12px;
+  word-break: break-all;
 }
 
 .slick-center  .cover_box {
@@ -638,13 +640,13 @@ div {
 }
 
  .font-size55 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom:10px;
 }
 
 .slick-center .font-size55 {
-  font-size: 55px;
+  font-size: 26px;
 }
 
 
@@ -969,15 +971,15 @@ g text {
 }
 
 .result_text {
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 600;
 }
 
 .result_box {
-  width: 1250px;
-  height: 697px;
-  border-radius: 30px;
-  background-color: #cccccc21;
+  background-image: url(/src/main/resources/images/flow_token.png);
+  width: 1257px;
+  height: 712px;
+  background-size: 1257px 712px;
   margin-top: 70px;
 }
 
@@ -1506,4 +1508,52 @@ g text {
   width: 260px;
   margin: 0 auto;
   margin-top: 46px;
+}
+
+
+/* token_box */ 
+
+.chart_pie_wrap {
+  width: 180px;
+  height: 180px;
+  transform: scaleX(-1);
+  transform-origin: center;
+  margin: 50px auto 32px;
+}
+.chart_pie_wrap .chart_pie {
+  transform: rotate(-100deg);
+  transform-origin: center;
+}
+.chart_pie_wrap .pie_circle {
+  transform-origin: center;
+  fill: none;
+  stroke-width: 20;
+}
+.chart_pie_wrap .pie_circle.pie_bg {
+  stroke: #f3f4f5;
+  stroke-width: 20;
+  stroke-dasharray: 408.407044968;
+  stroke-dashoffset: 0;
+  animation: chartLoad 1s forwards;
+  transform: scaleX(-1) rotate(-180deg);
+}
+.chart_pie_wrap .pie_circle.pie_circle1 {
+  stroke: #7734e2;
+  transform: rotate(0deg);
+}
+.chart_pie_wrap .pie_circle.pie_circle2 {
+  stroke: #2474e2;
+}
+.chart_pie_wrap .pie_circle.pie_circle3 {
+  stroke: #17e3d4;
+}
+.chart_pie_wrap .pie_circle.pie_circle4 {
+  stroke: #ff7e1f;
+}
+
+
+@keyframes chartLoad {
+  100% {
+    stroke-dashoffset: 408.407044968;
+  }
 }
