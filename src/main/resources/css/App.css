@@ -703,7 +703,7 @@ div {
   width: 100%;
   height: 100%;
   background: linear-gradient(45deg, #18171f , #323b3c);
-  border-radius: 10px;
+  border-radius: 45px;
   border: 1px solid #1f2632;
   padding:20px;
 }
@@ -718,7 +718,7 @@ div {
   display: inline-block;
   margin: 0 auto;
   margin-top: 100px;
-
+  border-radius: 70px;
 }
 
 .more_text_box {
@@ -733,9 +733,18 @@ div {
   margin-left: 337px;
 }
 
+.arrow_right_alt {
+    color: white;
+    transform: rotate(314deg);
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
 .more_text {
   display: inline-block;
   padding-left: 30px;
+  font-size: 20px;
 }
 
 .whitepaper {
@@ -745,28 +754,28 @@ div {
 }
 
 .tokenomics {
-  width: 1250px;
+  width: 1050px;
   margin: 0 auto;
   margin-top: 200px;
 }
 
 .enomics_box {
-  width: 1250px;
-  height: 427px;
-  background-color: #192234;
-  border-radius: 20px;
+  width: 1050px;
+  height: 298px;
+  background-color: #181818;
+  border-radius: 47px;
   position: relative;
   padding: 40px 90px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .enomics {
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 600;
   position: absolute;
-  top: -30px;
-  left: 0;
+  top: -24px;
+  left: 30px;
 }
 
   
@@ -791,9 +800,10 @@ div {
 }
 
 .enomic_text {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 600;
-  margin-top: 53px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .enomic_text_text {
@@ -806,6 +816,7 @@ div {
   font-weight: 600;
   font-size: 40px;
   text-align: center;
+  margin-bottom:80px;
 }
 
 .token_box {
@@ -833,13 +844,11 @@ g text {
 
 .token_img {
   background-image: url(/src/main/resources/images/neon_token.png);
-  width: 40px;
-  height: 40px;
-  background-size: 40px 40px;
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
   display: inline-block;
   position: relative;
-  margin-left: 40px;
-
 }
 
 .token_img.usdt {
@@ -870,6 +879,12 @@ g text {
 .token_img.dai {
   background-image: url(/src/main/resources/images/dai.png);
 
+  
+}
+
+.tonken_img_box {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .house {
@@ -879,42 +894,46 @@ g text {
 }
 
 .house_text_top {
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 600;
   margin-bottom: 30px;
   display: inline-block;
 }
 
-.house_text {
-  font-size: 20px;
+.house_text_box {
+  font-size: 18px;
   display: inline-block;
   width: 600px;
   vertical-align: top;
+  margin-left: 85px;
 }
+
+
 
 .house_box {
   background-color: #44455a69;
-  border-radius: 20px;
+  border-radius: 73px;
   text-align: center;
-  width: 650px;
-  height: 500px;
+  width: 530px;
+  height: 462px;
   display: inline-block;
 }
 
 
 
 .house_button {
-  width: 200px;
+  width: 174px;
   font-weight: 600;
-  height: 70px;
+  height: 43px;
   text-align: center;
-  line-height: 70px;
+  line-height: 43px;
   background-color: #b5ae66;
-  border-radius: 30px;
+  border-radius: 9px;
   border: 1px solid #ffffff3b;
-  margin-top: 280px;
+  margin-top: 80px;
   display: inline-block;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .text_center {
@@ -957,9 +976,9 @@ g text {
 }
 
 .house_img.big {
-  width: 469.6px;
-  height: 304px;
-  background-size: 469.6px 304px;
+  width: 400px;
+  height: 225px;
+  background-size: 400px 225px;
   filter: unset;
 }
 
@@ -995,7 +1014,7 @@ g text {
 }
 
 .nft_text {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
 }
 
@@ -1011,9 +1030,9 @@ g text {
 
 .NFT_img {
   background-image: url(/src/main/resources/images/nft_img.png);
-  width: 491px;
-  height: 541px;
-  background-size: 491px 541px;
+  width: 553px;
+  height: 558px;
+  background-size: 553px 588px;
   display: inline-block;
 }
 
@@ -1026,9 +1045,9 @@ g text {
 .nft_text_box {
   vertical-align: top;
   text-align: left;
-  width: 759px;
+  width: 650px;
   display: inline-block;
-  padding-left: 200px;
+  padding-left: 180px;
   padding-top: 50px;
 }
 
@@ -1080,7 +1099,7 @@ g text {
 }
 
 .neon_buy_text {
-  margin-top: 10px;
+  margin-top: 40px;
   margin-left: 30px;
   font-size: 55px;
   font-weight: 600;
@@ -1094,13 +1113,22 @@ g text {
   text-align: right;
   border-radius: 50px;
   background-color: #464551;
-  padding-right: 10px;
+  padding-right: 25px;
   font-size: 24px;
   line-height: 46px;
   font-weight: 600;
   vertical-align: top;
-  margin-top: 21px;
-  margin-left: 30px;
+  margin-top: 53px;
+  margin-left: 36px;
+  box-sizing: border-box;
+  border: 1px solid #1D44A0;
+}
+
+.neon_token {
+  background-image: url(/src/main/resources/images/neon_token2.png);
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .igo {
@@ -1117,10 +1145,10 @@ g text {
 }
 
 .price_box {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-left: 30px;
-  width: 60%;
-  font-size: 28px;
+  width: 70%;
+  font-size: 21px;
 }
 
 .neon_price {
@@ -1128,33 +1156,35 @@ g text {
   float: left;
   margin-right: 70px;
   color: aqua;
+  margin-left: 30px;
 }
 
 .neon_price_sub {
-  font-size: 16px;
+  font-size: 25px;
   margin-top: 3px;
   font-weight: 600;
-  color:white
+  color: white;
 }
 
 .buy_button {
   float: right;
-  margin-top: 36px;
+  margin-top: 30px;
   margin-right: 40px;
   font-weight: 600;
-  font-size: 25px;
   background-color: #3a3f44;
-  width: 120px;
+  width: 194px;
   text-align: center;
-  border-radius: 10px;
-  height: 45px;
-  line-height: 43px;
+  border-radius: 32px;
+  height: 70px;
+  line-height: 68px;
   cursor: pointer;
+  font-size: 38px;
 }
 
 .launch_event {
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .footer_bottom {
@@ -1180,7 +1210,43 @@ g text {
   border-radius: 21px;
   margin-right: 50px;
   position: relative;
+
+  border: 0.1rem solid #fff;
+  border-radius: 0.1rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
 }
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff,
+      0 0 0.5rem var(--neon-border-color), inset 0 0 0.5rem var(--neon-border-color),
+      0 0 1rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color);
+  }
+
+  /* 20%,
+  24%,
+  55% {
+    box-shadow: none;
+  } */
+}
+
+:root {
+  /* Base font size */
+  font-size: 10px;
+
+  /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
 
 .overflow_box {
   width: 4000px;
@@ -1514,12 +1580,51 @@ g text {
 /* token_box */ 
 
 .chart_pie_wrap {
-  width: 180px;
-  height: 180px;
-  transform: scaleX(-1);
+  width: 450px;
+  height: 450px;
   transform-origin: center;
-  margin: 50px auto 32px;
+  display: inline-block;
+  margin-top: 50px;
+  vertical-align: top;
 }
+
+.tokenomics_value_box {
+   width: 540px;
+    height: 562px;
+    background-color: #181818;
+    display: inline-block;
+    border-radius: 47px;
+    margin-left: 32px;
+    padding: 40px;
+}
+
+.tokenomics_value_text {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.tokenomics_value_text.two {
+  margin-left: 20px;
+}
+
+.token_img.small {
+  margin: 0px;
+  display: inline-block;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.tokenomics_value_oneLine {
+  margin-bottom: 40px;
+}
+
+.tokenomics_value_text_number {
+  float: right;
+}
+
 .chart_pie_wrap .chart_pie {
   transform: rotate(-100deg);
   transform-origin: center;
@@ -1527,33 +1632,42 @@ g text {
 .chart_pie_wrap .pie_circle {
   transform-origin: center;
   fill: none;
-  stroke-width: 20;
+  stroke-width: 40;
 }
 .chart_pie_wrap .pie_circle.pie_bg {
   stroke: #f3f4f5;
-  stroke-width: 20;
-  stroke-dasharray: 408.407044968;
+  stroke-width: 40;
+  stroke-dasharray: 1193.80496;
   stroke-dashoffset: 0;
   animation: chartLoad 1s forwards;
   transform: scaleX(-1) rotate(-180deg);
 }
 .chart_pie_wrap .pie_circle.pie_circle1 {
-  stroke: #7734e2;
+  stroke: #3a13a7;
   transform: rotate(0deg);
 }
 .chart_pie_wrap .pie_circle.pie_circle2 {
-  stroke: #2474e2;
+  stroke: #5c68ff;
 }
 .chart_pie_wrap .pie_circle.pie_circle3 {
-  stroke: #17e3d4;
+  stroke: #52e4ff;
 }
 .chart_pie_wrap .pie_circle.pie_circle4 {
-  stroke: #ff7e1f;
+  stroke: #ff4bcf;
+}
+.chart_pie_wrap .pie_circle.pie_circle5 {
+  stroke: #ccdaee;
+}
+.chart_pie_wrap .pie_circle.pie_circle6 {
+  stroke: #88fdb5;
+}
+.chart_pie_wrap .pie_circle.pie_circle7 {
+  stroke: #f46fff;
 }
 
 
 @keyframes chartLoad {
   100% {
-    stroke-dashoffset: 408.407044968;
+    stroke-dashoffset: 1193.80496;
   }
 }

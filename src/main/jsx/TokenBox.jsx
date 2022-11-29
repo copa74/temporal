@@ -5,8 +5,8 @@ import $ from "jquery";
 function TokenBox() {
 
   const makeCircle = () => {
-      const chartData = [50, 20, 25, 5]; // 차트 데이터
-      const pieR = 65; // R값
+      const chartData = [20, 20, 20, 15 , 15 , 5 , 5]; // 차트 데이터
+      const pieR = 162.5; // R값
       const formula = (2 * 3.1415926536 * pieR);
       let rotateFormula = 0;
 
@@ -29,7 +29,6 @@ function TokenBox() {
       if (scrollValue >= 3400) {
         makeCircle();
       } 
-      console.log(window.screenY);
     });
   });
 
@@ -37,12 +36,15 @@ function TokenBox() {
 
   return (
       <div className="chart_pie_wrap">
-        <svg className="chart_pie" width="180" height="180">
-          <circle className="pie_circle pie_circle1" cx="90" cy="90" r="65"></circle>
-          <circle className="pie_circle pie_circle2" cx="90" cy="90" r="65"></circle>
-          <circle className="pie_circle pie_circle3" cx="90" cy="90" r="65"></circle>
-          <circle className="pie_circle pie_circle4" cx="90" cy="90" r="65"></circle>
-          <circle className="pie_circle pie_bg" cx="90" cy="90" r="65"></circle>
+        <svg className="chart_pie" width="450" height="450">
+          <circle className="pie_circle pie_circle1" cx="225" cy="225" r="162.5"></circle>
+          <circle className="pie_circle pie_circle2" cx="225" cy="225" r="162.5"></circle>
+          <circle className="pie_circle pie_circle3" cx="225" cy="225" r="162.5"></circle>
+          <circle className="pie_circle pie_circle4" cx="225" cy="225" r="162.5"></circle>
+          <circle className="pie_circle pie_circle5" cx="225" cy="225" r="162.5"></circle>
+          <circle className="pie_circle pie_circle6" cx="225" cy="225" r="162.5"></circle>
+          <circle className="pie_circle pie_circle7" cx="225" cy="225" r="162.5"></circle>
+          <circle className="pie_circle pie_bg" cx="225" cy="225" r="162.5"></circle>
         </svg>
       </div>
   );

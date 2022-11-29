@@ -208,7 +208,7 @@ function MainPage() {
                   Private  
                   <div> Token Sales</div>
                 </div>
-                <span className='buy_neon' >NEON</span>
+                <div className='buy_neon' >  <div className='token_img neon' style={{ margin : "0" }} ></div> <span  style={{ verticalAlign: "super" }} >NEON</span></div>
 
                 <div className='price_box' >
 
@@ -224,7 +224,7 @@ function MainPage() {
 
                     <div className='neon_price' style={{ marginTop: "20px" }}  >
                       volume
-                      <div className='neon_price_sub' >$100K ≈ 5,000,000 NEON</div>
+                      <div className='neon_price_sub' >$100K ≈  <div className='token_img neon' style={{ margin : "0" ,verticalAlign: "sub" }} ></div> 5,000,000 NEON</div>
                     </div>
                 </div>
                 <div className='buy_button' onClick={onToggleBuyNeonPopup}  >BUY</div>
@@ -238,6 +238,9 @@ function MainPage() {
               </div>
               <div className='whitepaper' >
                   Whitepaper
+                  <span className="material-symbols-outlined arrow_right_alt">
+                    arrow_right_alt
+                  </span>
               </div>
               <div className='neon_border_bottom' ></div>
             </div>
@@ -258,32 +261,104 @@ function MainPage() {
 
         <div className='tokenomics'>
             <div className='token_h1' >Token Allocation</div>
-            <div className='token_box' >
-              {/* <ToTo /> */}
-              <TokenBox />
+            <TokenBox />
+            <div className='tokenomics_value_box' >
+
+              <div className='tokenomics_value_oneLine' >
+                <div className='tokenomics_value_text' >25%</div>
+                <div className='token_img neon small' style={{ margin : "0" }} ></div>
+                <div className='tokenomics_value_text two' >Staking</div>
+                <div className='tokenomics_value_text_number' >125,000,000</div>
+              </div>
+
+              <div className='tokenomics_value_oneLine' >
+                <div className='tokenomics_value_text' >25%</div>
+                <div className='token_img neon small' style={{ margin : "0" }} ></div>
+                <div className='tokenomics_value_text two' >Token Sales</div>
+                <div className='tokenomics_value_text_number' >125,000,000</div>
+              </div>
+
+              <div className='tokenomics_value_oneLine' >
+                <div className='tokenomics_value_text' >25%</div>
+                <div className='token_img neon small' style={{ margin : "0" }} ></div>
+                <div className='tokenomics_value_text two' >Ecosysyem</div>
+                <div className='tokenomics_value_text_number' >125,000,000</div>
+              </div>
+
+              <div className='tokenomics_value_oneLine' >
+                <div className='tokenomics_value_text' >25%</div>
+                <div className='token_img neon small' style={{ margin : "0" }} ></div>
+                <div className='tokenomics_value_text two' >Marketing & Partnerships</div>
+                <div className='tokenomics_value_text_number' >125,000,000</div>
+              </div>
+
+              <div className='tokenomics_value_oneLine' >
+                <div className='tokenomics_value_text' >25%</div>
+                <div className='token_img neon small' style={{ margin : "0" }} ></div>
+                <div className='tokenomics_value_text two' >Reseve</div>
+                <div className='tokenomics_value_text_number' >125,000,000</div>
+              </div>
+
+              <div className='tokenomics_value_oneLine' >
+                <div className='tokenomics_value_text' >25%</div>
+                <div className='token_img neon small' style={{ margin : "0" }} ></div>
+                <div className='tokenomics_value_text two' >Staking</div>
+                <div className='tokenomics_value_text_number' >125,000,000</div>
+              </div>
+
+              <div className='tokenomics_value_oneLine' >
+                <div className='tokenomics_value_text' >25%</div>
+                <div className='token_img neon small' style={{ margin : "0" }} ></div>
+                <div className='tokenomics_value_text two' >Bug Bounties & Accelerator</div>
+                <div className='tokenomics_value_text_number' >125,000,000</div>
+              </div>
+
+              <div className='tokenomics_value_oneLine' >
+                <div className='tokenomics_value_text' >25%</div>
+                <div className='token_img neon small' style={{ margin : "0" }} ></div>
+                <div className='tokenomics_value_text two' >Team</div>
+                <div className='tokenomics_value_text_number' >125,000,000</div>
+              </div>
+
+
             </div>
+
+
 
             <div className='enomics_box'>
               <div className='enomics' >TOKENOMICS</div>
               <div className='enomic_text'  >
-                <span className='enomic_text_text'>Native Token</span> <div className='token_img neon'></div>
+                <span className='enomic_text_text'>Native Token</span> 
               </div>
+              <div className='tonken_img_box' >  <div className='token_img neon'></div>  </div>
+             
+
               <div className='enomic_text' >
-                <span className='enomic_text_text'>Playing Coins </span>  <div className='token_img usdt'></div> <div className='token_img neon'></div> 
+                <span className='enomic_text_text'>Playing Coins </span>   
               </div>
+
+              <div className='tonken_img_box' >  
+               <div className='token_img usdt'></div> 
+               {/* <div className='token_img neon'></div>   */}
+              </div>
+
               <div className='enomic_text' >
                 <span className='enomic_text_text'> Supported Assets for NEON SWAP  </span>
-                  <div className='token_img matic' style={{ marginLeft : "52px" }} ></div>
-                  <div className='token_img etc'></div>
-                  <div className='token_img binance1'></div>
-                  <div className='token_img dai'></div>
               </div>
+
+              <div className='tonken_img_box' >  
+                  <div className='token_img matic' style={{ marginRight: "15px" }} ></div>
+                  <div className='token_img etc' style={{ marginRight: "15px" }}></div>
+                  <div className='token_img binance1' style={{ marginRight: "15px" }}></div>
+                  <div className='token_img dai' style={{ marginRight: "15px" }}></div>
+              </div>
+
             </div>
 
         </div>
 
         <div className='house' >
-          <div className='house_text' >
+          <div className='house_text_box' >
             <div className='house_text_top'>House Always Win?</div>
             <div  className='house_text'>Become "the house" by holding NEOND NFT</div>
             <div  className='house_text'>NEON Edge(USDT) will be distributed to the NFT holders</div>
@@ -317,9 +392,9 @@ function MainPage() {
             <div className='nft_text'> One-stop liquuduty NFT-Fi</div>
             <br />
             <li>
-              <div className='NFT__img_text' >NEOND NFT Pawnshop</div>
+              <div className='NFT__img_text' >NEOND NFT Pawnshop Collateralize</div>
               <br />
-              <div className='NFT__img_text' style={{marginLeft: "21px"}} >Collateralize your bluechip NFTs and borrow USDT</div>
+              <div className='NFT__img_text' style={{marginLeft: "21px"}} >your bluechip NFTs and borrow USDT</div>
             </li>
             <br />
             <li>
